@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='viewport' content='width=320' />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Pindutin mo nalang yun Oo<3</title>
+</head>
+<body>
+    <div class="ost-multi-header">
+        <div class="w3-container w3-center w3-animate-zoom">
+            <div class="wrapper">
+                <div class="container">
+                    <p id="question"><span>Crush mo'ko no?</span></p>
+                    <button class="btn" id="Oo"><b>Oo</b></button>
+                    <button class="btn" id="Hinde"><b>Hinde</b></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const noBtn = document.getElementById('Hinde');
+        const yesBtn = document.getElementById('Oo');
+        const ques = document.getElementById('question');
+
+        noBtn.addEventListener('mouseover', () => {
+            let rand = Math.floor(Math.random() * (500 - 100) + 1);
+            let rand2 = Math.floor(Math.random() * (-300 - 100) + 1);
+            noBtn.style.transform = "translate(" + rand + "px," + rand2 + "px)";
+        });
+
+        yesBtn.addEventListener("click", () => {
+            ques.innerHTML = "";
+            const imageElement = document.getElementById('question');
+            imageElement.innerHTML = `<span><img src="https://scontent.fcrk1-1.fna.fbcdn.net/v/t1.15752-9/346101426_775038554243600_4205402447134967162_n.png?_nc_cat=108&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeHqCurufaZip8CmisCS7SqvzScstR44W0DNJyy1HjhbQLvvMbxwwiYMmtbo0mPvi8OMMg7D-dAagPsUVHoAiK2_&_nc_ohc=gKOxBOh9IN8AX_RoDqP&_nc_ht=scontent.fcrk1-1.fna&oh=03_AdTlTGWG4Zf9FKiIRI5usbMWEccbWOgQpAMlwVVF0HI3nA&oe=64856563" alt="Image"></span> YIEEEEEEEEE`;
+        });
+    </script>
+    <div>
+        <p1>Created by odribachini</p1>
+    </div>
+</body>
+</html>
